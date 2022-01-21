@@ -1,6 +1,6 @@
 <template>
-  <p>Reaction time - {{ score }}</p>
-  <p class="speed">{{ speed }}</p>
+  <p>Aaaand your score isss!!!- {{ score }}</p>
+  <p class="reaction">{{ reaction }}</p>
 </template>
 
 <script>
@@ -8,27 +8,27 @@ export default {
     props: ['score'],
     data() {
         return {
-            speed: null
+            reaction: null
         }
     },
     mounted() {
-      if(this.score < 250) {
-          this.speed = "Very fast"
+      if(this.score < 290) {
+          this.reaction = "What the! I didn't see... do it again!?"
       }
-      else if (this.score < 400 ) {
-        this.speed = "Relatively fast"  
+      else if (this.score < 350 ) {
+        this.reaction = "Power level increasing"  
       }  
       else {
-        this.speed = "Not so fast"
+        this.reaction = "Flash is dissapointed"
       }
     }
 }
 </script>
 
 <style>
-  .speed {
+  .reaction {
       font-size: 1.4em;
-      color: #0faf87;
+      color: #000000;
       font-weight: bold;
   }
 </style>

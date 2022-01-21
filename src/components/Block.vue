@@ -36,12 +36,13 @@ export default {
 
 <style>
     .block {
-        width: 400px;
-        border-radius: 20px;
-        background: #0faf87;
-        color: white;
+        width: 30px;
+        border-radius: 200px;
+        background: #000000;
+        color: rgb(0, 195, 255);
         text-align: center;
-        padding: 100px 0;
-        margin: 40px auto;
+        padding: 200px;
+        margin: 10px auto;
+        box-shadow: rgb(0, 195, 255);
     }
 </style>
