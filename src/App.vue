@@ -1,5 +1,5 @@
 <template>
-  <h1>Young Grasshopper Reaction Timer</h1>
+  <h1>Reaction Time Test</h1>
   <button @click="start" :disabled="isPlaying">Play</button>
   <Block v-if="isPlaying" :delay="delay" @done="endGame" />
   <Results v-if="showResults" :score="score" />
@@ -47,7 +47,7 @@ export default {
   margin-top: 60px;
 }
 button {
-  background: #0faf82;
+  background: #00d9ff;
   color: white;
   border: none;
   padding: 8px 16px;
